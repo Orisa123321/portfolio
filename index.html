@@ -1,0 +1,1146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Ori Sharabi — Computer Science Student" />
+    <meta property="og:title" content="Ori Sharabi | Portfolio" />
+    <meta
+      property="og:description"
+      content="Computer Science Student | Backend, Full-Stack & AI"
+    />
+    <meta property="og:type" content="website" />
+    <title>Ori Sharabi | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ==================== NAVIGATION ==================== -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <a href="#hero" class="nav-logo" id="nav-logo">
+          <span class="logo-dot"></span>
+          Ori Sharabi
+        </a>
+        <ul class="nav-links" id="nav-links">
+          <li>
+            <a href="#hero" class="nav-link active" data-section="hero">Home</a>
+          </li>
+          <li>
+            <a href="#skills" class="nav-link" data-section="skills">Skills</a>
+          </li>
+          <li>
+            <a href="#projects" class="nav-link" data-section="projects"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a href="#education" class="nav-link" data-section="education"
+              >Education</a
+            >
+          </li>
+          <li>
+            <a href="#contact" class="nav-link" data-section="contact"
+              >Contact</a
+            >
+          </li>
+        </ul>
+        <a
+          href="https://github.com/Orisa123321"
+          target="_blank"
+          rel="noopener"
+          class="nav-cta"
+          id="nav-cta"
+        >
+          <i class="fab fa-github"></i> GitHub
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="#hero" class="mobile-link">Home</a>
+      <a href="#skills" class="mobile-link">Skills</a>
+      <a href="#projects" class="mobile-link">Projects</a>
+      <a href="#education" class="mobile-link">Education</a>
+      <a href="#contact" class="mobile-link">Contact</a>
+    </div>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="hero" id="hero">
+      <div class="hero-container">
+        <!-- Left Content -->
+        <div class="hero-left" id="hero-left">
+          <div class="hero-terminal-badge">
+            <div class="terminal-dots">
+              <span></span><span></span><span></span>
+            </div>
+            <span>open_to_work.sh</span>
+          </div>
+          <h1 class="hero-title">
+            Crafting <span class="gradient-text">Scalable</span><br />
+            Backend &amp;<br />
+            <span class="gradient-text">Cloud</span> Systems
+          </h1>
+          <p class="hero-tagline" id="hero-tagline">
+            $ CS Student · Backend · Full-Stack · AI
+          </p>
+          <p class="hero-summary">
+            I'm a 2nd-year Computer Science student (Open University) passionate
+            about building real-world systems, integrating AI, and writing
+            clean, maintainable code. Currently seeking a junior software
+            engineering position where I can make a meaningful impact.
+          </p>
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary" id="hero-explore-btn">
+              <i class="fas fa-rocket"></i> Explore My Work
+            </a>
+            <a href="#contact" class="btn btn-outline" id="hero-contact-btn">
+              <i class="fas fa-paper-plane"></i> Let's Connect
+            </a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-number" data-target="08">0</span>
+              <span class="stat-label">Graduation (2027)</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-number" data-target="2">0</span>
+              <span class="stat-label">Languages (EN/HE)</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-number" data-target="15">0</span>
+              <span class="stat-label">Technologies</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Content — Profile Image -->
+        <div class="hero-right" id="hero-right">
+          <div class="profile-wrapper">
+            <div class="profile-ring"></div>
+            <div class="profile-ring-inner"></div>
+            <div class="profile-card">
+              <img
+                src="profile.png"
+                alt="Ori Sharabi - Software Developer"
+                class="profile-img"
+                id="profile-img"
+              />
+              <div class="profile-overlay">
+                <div class="profile-info-pill">
+                  <i class="fas fa-map-marker-alt"></i> Israel
+                </div>
+              </div>
+            </div>
+            <div class="floating-badge badge-top-right">
+              <i class="fas fa-server"></i>
+              <span>Backend Dev</span>
+            </div>
+            <div class="floating-badge badge-bottom-left">
+              <i class="fas fa-layer-group"></i>
+              <span>Full-Stack</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Scroll Indicator -->
+      <div class="scroll-indicator" id="scroll-indicator">
+        <div class="scroll-mouse">
+          <div class="scroll-wheel"></div>
+        </div>
+        <span>Scroll down</span>
+      </div>
+    </section>
+
+    <!-- ==================== SKILLS SECTION ==================== -->
+    <section class="skills-section" id="skills">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-tag">What I work with</span>
+          <h2 class="section-title">
+            Technical <span class="gradient-text">Arsenal</span>
+          </h2>
+          <p class="section-subtitle">
+            A curated set of tools, languages, and frameworks for modern
+            software engineering.
+          </p>
+        </div>
+      </div>
+
+      <!-- Marquee Row 1 -->
+      <div class="skills-marquee-wrapper" id="skills-marquee-1">
+        <div class="skills-track" id="skills-track-1">
+          <!-- Languages -->
+          <span class="skill-chip"
+            ><i class="fab fa-python" style="color: #3b82f6"></i> Python</span
+          >
+          <span class="skill-chip"
+            ><i class="fab fa-js-square" style="color: #f59e0b"></i>
+            JavaScript</span
+          >
+          <span class="skill-chip"
+            ><i class="fas fa-code" style="color: #818cf8"></i> TypeScript</span
+          >
+          <span class="skill-chip"
+            ><i class="fas fa-terminal" style="color: #94a3b8"></i> C</span
+          >
+          <span class="skill-chip"
+            ><i class="fab fa-java" style="color: #f97316"></i> Java</span
+          >
+          <span class="skill-chip"
+            ><i class="fas fa-microchip" style="color: #94a3b8"></i>
+            Assembly</span
+          >
+          <span class="skill-chip"
+            ><i class="fab fa-html5" style="color: #f97316"></i> HTML/CSS</span
+          >
+          <!-- Backend -->
+          <span class="marquee-separator"
+            ><i class="fas fa-server"></i> Backend</span
+          >
+          <span class="skill-chip"
+            ><i class="fab fa-node-js" style="color: #22c55e"></i> Node.js</span
+          >
+          <span class="skill-chip"
+            ><i class="fas fa-fire" style="color: #10b981"></i> FastAPI</span
+          >
+          <span class="skill-chip"
+            ><i class="fas fa-bolt" style="color: #f59e0b"></i> Express.js</span
+          >
+          <span class="skill-chip"
+            ><i class="fas fa-database" style="color: #3b82f6"></i>
+            PostgreSQL</span
+          >
+          <span class="skill-chip"
+            ><i class="fas fa-database" style="color: #38bdf8"></i> MySQL</span
+          >
+          <span class="skill-chip"
+            ><i class="fas fa-fire-alt" style="color: #f97316"></i>
+            Firebase</span
+          >
+          <span class="skill-chip"
+            ><i class="fas fa-search" style="color: #818cf8"></i>
+            OpenSearch</span
+          >
+          <!-- Frontend -->
+          <span class="marquee-separator"
+            ><i class="fas fa-desktop"></i> Frontend</span
+          >
+          <span class="skill-chip"
+            ><i class="fab fa-react" style="color: #38bdf8"></i> React</span
+          >
+          <span class="skill-chip"
+            ><i class="fas fa-wind" style="color: #818cf8"></i> Tailwind
+            CSS</span
+          >
+          <span class="skill-chip"
+            ><i class="fas fa-bolt" style="color: #f97316"></i> Vite</span
+          >
+          <span class="skill-chip"
+            ><i class="fas fa-magic" style="color: #fb7185"></i> Framer
+            Motion</span
+          >
+          <!-- Tools -->
+          <span class="marquee-separator"
+            ><i class="fas fa-tools"></i> Tools</span
+          >
+          <span class="skill-chip"
+            ><i class="fab fa-docker" style="color: #38bdf8"></i> Docker</span
+          >
+          <span class="skill-chip"
+            ><i class="fab fa-git-alt" style="color: #f97316"></i> Git &
+            GitHub</span
+          >
+          <span class="skill-chip"
+            ><i class="fab fa-aws" style="color: #f59e0b"></i> AWS</span
+          >
+          <span class="skill-chip"
+            ><i class="fab fa-linux" style="color: #94a3b8"></i> Linux</span
+          >
+          <span class="skill-chip"
+            ><i class="fas fa-robot" style="color: #10b981"></i>
+            Automation</span
+          >
+          <!-- DUPLICATE for seamless scroll -->
+          <span class="skill-chip"
+            ><i class="fab fa-python" style="color: #3b82f6"></i> Python</span
+          >
+          <span class="skill-chip"
+            ><i class="fab fa-js-square" style="color: #f59e0b"></i>
+            JavaScript</span
+          >
+          <span class="skill-chip"
+            ><i class="fas fa-code" style="color: #818cf8"></i> TypeScript</span
+          >
+          <span class="skill-chip"
+            ><i class="fas fa-terminal" style="color: #94a3b8"></i> C</span
+          >
+          <span class="skill-chip"
+            ><i class="fab fa-java" style="color: #f97316"></i> Java</span
+          >
+          <span class="skill-chip"
+            ><i class="fas fa-microchip" style="color: #94a3b8"></i>
+            Assembly</span
+          >
+          <span class="skill-chip"
+            ><i class="fab fa-html5" style="color: #f97316"></i> HTML/CSS</span
+          >
+          <span class="marquee-separator"
+            ><i class="fas fa-server"></i> Backend</span
+          >
+          <span class="skill-chip"
+            ><i class="fab fa-node-js" style="color: #22c55e"></i> Node.js</span
+          >
+          <span class="skill-chip"
+            ><i class="fas fa-fire" style="color: #10b981"></i> FastAPI</span
+          >
+          <span class="skill-chip"
+            ><i class="fas fa-bolt" style="color: #f59e0b"></i> Express.js</span
+          >
+          <span class="skill-chip"
+            ><i class="fas fa-database" style="color: #3b82f6"></i>
+            PostgreSQL</span
+          >
+          <span class="skill-chip"
+            ><i class="fas fa-database" style="color: #38bdf8"></i> MySQL</span
+          >
+          <span class="skill-chip"
+            ><i class="fas fa-fire-alt" style="color: #f97316"></i>
+            Firebase</span
+          >
+          <span class="skill-chip"
+            ><i class="fas fa-search" style="color: #818cf8"></i>
+            OpenSearch</span
+          >
+          <span class="marquee-separator"
+            ><i class="fas fa-desktop"></i> Frontend</span
+          >
+          <span class="skill-chip"
+            ><i class="fab fa-react" style="color: #38bdf8"></i> React</span
+          >
+          <span class="skill-chip"
+            ><i class="fas fa-wind" style="color: #818cf8"></i> Tailwind
+            CSS</span
+          >
+          <span class="skill-chip"
+            ><i class="fas fa-bolt" style="color: #f97316"></i> Vite</span
+          >
+          <span class="skill-chip"
+            ><i class="fas fa-magic" style="color: #fb7185"></i> Framer
+            Motion</span
+          >
+          <!-- Tools (duplicate) -->
+          <span class="marquee-separator"
+            ><i class="fas fa-tools"></i> Tools</span
+          >
+          <span class="skill-chip"
+            ><i class="fab fa-docker" style="color: #38bdf8"></i> Docker</span
+          >
+          <span class="skill-chip"
+            ><i class="fab fa-git-alt" style="color: #f97316"></i> Git &
+            GitHub</span
+          >
+          <span class="skill-chip"
+            ><i class="fab fa-aws" style="color: #f59e0b"></i> AWS</span
+          >
+          <span class="skill-chip"
+            ><i class="fab fa-linux" style="color: #94a3b8"></i> Linux</span
+          >
+          <span class="skill-chip"
+            ><i class="fas fa-robot" style="color: #10b981"></i>
+            Automation</span
+          >
+        </div>
+      </div>
+
+      <!-- Category cards grid (below marquee) -->
+      <div class="section-container" style="margin-top: 56px">
+        <div class="skills-grid" id="skills-grid">
+          <!-- Languages -->
+          <div class="skill-category">
+            <h3 class="category-title">
+              <i class="fas fa-terminal"></i> Languages
+            </h3>
+            <div class="skill-badges">
+              <span class="skill-badge badge-blue"
+                ><i class="fab fa-python"></i> Python</span
+              >
+              <span class="skill-badge badge-yellow"
+                ><i class="fab fa-js-square"></i> JavaScript</span
+              >
+              <span class="skill-badge badge-purple"
+                ><i class="fas fa-code"></i> TypeScript</span
+              >
+              <span class="skill-badge badge-gray"
+                ><i class="fas fa-terminal"></i> C</span
+              >
+              <span class="skill-badge badge-orange"
+                ><i class="fab fa-java"></i> Java</span
+              >
+              <span class="skill-badge badge-gray"
+                ><i class="fas fa-microchip"></i> Assembly</span
+              >
+              <span class="skill-badge badge-orange"
+                ><i class="fab fa-html5"></i> HTML/CSS</span
+              >
+            </div>
+          </div>
+
+          <!-- Backend & Databases -->
+          <div class="skill-category">
+            <h3 class="category-title">
+              <i class="fas fa-server"></i> Backend &amp; Data
+            </h3>
+            <div class="skill-badges">
+              <span class="skill-badge badge-green"
+                ><i class="fab fa-node-js"></i> Node.js</span
+              >
+              <span class="skill-badge badge-teal"
+                ><i class="fas fa-fire"></i> FastAPI / Express</span
+              >
+              <span class="skill-badge badge-blue-dark"
+                ><i class="fas fa-database"></i> PostgreSQL</span
+              >
+              <span class="skill-badge badge-blue-light"
+                ><i class="fas fa-database"></i> MySQL</span
+              >
+              <span class="skill-badge badge-orange-dark"
+                ><i class="fas fa-fire-alt"></i> Firebase / Firestore</span
+              >
+              <span class="skill-badge badge-purple-light"
+                ><i class="fas fa-search"></i> OpenSearch</span
+              >
+            </div>
+          </div>
+
+          <!-- Frontend -->
+          <div class="skill-category">
+            <h3 class="category-title">
+              <i class="fas fa-desktop"></i> Frontend
+            </h3>
+            <div class="skill-badges">
+              <span class="skill-badge badge-cyan"
+                ><i class="fab fa-react"></i> React</span
+              >
+              <span class="skill-badge badge-purple"
+                ><i class="fas fa-wind"></i> Tailwind CSS</span
+              >
+              <span class="skill-badge badge-orange-dark"
+                ><i class="fas fa-bolt"></i> Vite</span
+              >
+              <span class="skill-badge badge-red"
+                ><i class="fas fa-magic"></i> Framer Motion</span
+              >
+            </div>
+          </div>
+
+          <!-- Tools & Infrastructure -->
+          <div class="skill-category">
+            <h3 class="category-title">
+              <i class="fas fa-tools"></i> Tools &amp; Infrastructure
+            </h3>
+            <div class="skill-badges">
+              <span class="skill-badge badge-blue-dark"
+                ><i class="fab fa-docker"></i> Docker</span
+              >
+              <span class="skill-badge badge-orange-dark"
+                ><i class="fab fa-git-alt"></i> Git &amp; GitHub</span
+              >
+              <span class="skill-badge badge-gray"
+                ><i class="fab fa-linux"></i> Linux</span
+              >
+              <span class="skill-badge badge-teal"
+                ><i class="fas fa-network-wired"></i> Networking</span
+              >
+              <span class="skill-badge badge-purple"
+                ><i class="fas fa-shield-alt"></i> Cybersecurity</span
+              >
+            </div>
+          </div>
+
+          <!-- Spoken Languages -->
+          <div
+            class="skill-category"
+            style="grid-column: 1 / -1; max-width: 420px; margin: 0 auto"
+          >
+            <h3 class="category-title">
+              <i class="fas fa-globe"></i> Spoken Languages
+            </h3>
+            <div class="skill-badges" style="justify-content: center">
+              <span class="skill-badge badge-green-dark"
+                ><i class="fas fa-comments"></i> Hebrew – Native</span
+              >
+              <span class="skill-badge badge-blue"
+                ><i class="fas fa-comments"></i> English – Fluent</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PROJECT SHOWCASE ==================== -->
+    <section class="projects-showcase" id="projects">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-tag">Deep dives</span>
+          <h2 class="section-title">
+            Project <span class="gradient-text">Showcase</span>
+          </h2>
+          <p class="section-subtitle">
+            8 personal and academic projects highlighting my technical depth
+            across backend, cybersecurity, AI, and full-stack engineering.
+          </p>
+        </div>
+
+        <div class="projects-grid" id="projects-list">
+          <!-- Project 1: MindShare -->
+          <div class="project-card" id="project-mindshare">
+            <div class="project-card-header">
+              <span class="project-num-badge">01</span>
+              <a
+                href="https://github.com/Orisa123321"
+                target="_blank"
+                rel="noopener"
+                class="project-link"
+                aria-label="View project on GitHub"
+              >
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+            <span class="project-category">Full-Stack · AI · Real-time</span>
+            <h3 class="project-name">
+              MindShare — Collaborative Learning Platform
+            </h3>
+            <ul class="project-description">
+              <li>
+                Built a full-stack monorepo platform for students to find study
+                partners, share materials, and create study groups.
+              </li>
+              <li>
+                Integrated Groq (Llama 3) AI to power an intelligent Q&amp;A
+                forum with real-time answers via Socket.io.
+              </li>
+              <li>
+                Designed a RESTful API with Node.js + Express + TypeScript
+                backed by PostgreSQL &amp; Prisma ORM.
+              </li>
+              <li>
+                Implemented secure file storage via Backblaze B2 (S3-compatible)
+                and JWT authentication.
+              </li>
+              <li>
+                Deployed backend on Railway and frontend on Vercel with CI/CD
+                from GitHub.
+              </li>
+            </ul>
+            <div class="project-tech-stack">
+              <span class="tech-pill">React</span>
+              <span class="tech-pill">TypeScript</span>
+              <span class="tech-pill">Node.js</span>
+              <span class="tech-pill">PostgreSQL</span>
+              <span class="tech-pill">Groq AI</span>
+              <span class="tech-pill">Socket.io</span>
+              <span class="tech-pill">Prisma</span>
+              <span class="tech-pill">Backblaze B2</span>
+            </div>
+          </div>
+
+          <!-- Project 2: AI Cyber Security Scanner -->
+          <div class="project-card" id="project-cyber-scanner">
+            <div class="project-card-header">
+              <span class="project-num-badge">02</span>
+              <a
+                href="https://github.com/Orisa123321"
+                target="_blank"
+                rel="noopener"
+                class="project-link"
+                aria-label="View project on GitHub"
+              >
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+            <span class="project-category">Cybersecurity · AI · FastAPI</span>
+            <h3 class="project-name">AI Cyber Security Scanner</h3>
+            <ul class="project-description">
+              <li>
+                Built an advanced vulnerability scanner that analyzes source
+                code snippets in real-time.
+              </li>
+              <li>
+                Powered by Google Gemini AI to detect complex vulnerabilities
+                such as SQL Injection and XSS.
+              </li>
+              <li>
+                Developed a fast RESTful backend using FastAPI + Uvicorn with a
+                React frontend dashboard.
+              </li>
+              <li>
+                Implemented secure environment variable handling and Git
+                security best practices.
+              </li>
+            </ul>
+            <div class="project-tech-stack">
+              <span class="tech-pill">Python</span>
+              <span class="tech-pill">FastAPI</span>
+              <span class="tech-pill">Gemini AI</span>
+              <span class="tech-pill">React</span>
+              <span class="tech-pill">Uvicorn</span>
+            </div>
+          </div>
+
+          <!-- Project 3: Mini EDR -->
+          <div class="project-card" id="project-mini-edr">
+            <div class="project-card-header">
+              <span class="project-num-badge">03</span>
+              <a
+                href="https://github.com/Orisa123321"
+                target="_blank"
+                rel="noopener"
+                class="project-link"
+                aria-label="View project on GitHub"
+              >
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+            <span class="project-category"
+              >Cybersecurity · Systems · C · Python</span
+            >
+            <h3 class="project-name">
+              Mini EDR — Endpoint Detection &amp; Response
+            </h3>
+            <ul class="project-description">
+              <li>
+                Engineered a lightweight EDR system with a C-based threat hunter
+                agent that lists processes, scans DLLs, and inspects TCP network
+                connections in real time.
+              </li>
+              <li>
+                Built a FastAPI WebSocket server acting as a Command &amp;
+                Control center, receiving live telemetry from deployed agents
+                and broadcasting alerts to an admin dashboard.
+              </li>
+              <li>
+                Designed a React dashboard to visualize alerts and remotely
+                issue kill commands to agents over persistent WebSocket
+                connections.
+              </li>
+            </ul>
+            <div class="project-tech-stack">
+              <span class="tech-pill">C</span>
+              <span class="tech-pill">Python</span>
+              <span class="tech-pill">FastAPI</span>
+              <span class="tech-pill">WebSocket</span>
+              <span class="tech-pill">React</span>
+              <span class="tech-pill">Windows API</span>
+            </div>
+          </div>
+
+          <!-- Project 4: AI Network IDS -->
+          <div class="project-card" id="project-ids">
+            <div class="project-card-header">
+              <span class="project-num-badge">04</span>
+              <a
+                href="https://github.com/Orisa123321"
+                target="_blank"
+                rel="noopener"
+                class="project-link"
+                aria-label="View project on GitHub"
+              >
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+            <span class="project-category"
+              >Networking · AI · Cybersecurity</span
+            >
+            <h3 class="project-name">AI-Powered Network IDS/IPS</h3>
+            <ul class="project-description">
+              <li>
+                Developed a real-time packet sniffer using Scapy that monitors
+                live network traffic and flags suspicious ports and payload
+                keywords.
+              </li>
+              <li>
+                Integrated Google Gemini AI as a SOC analyst to classify
+                intercepted payloads as malicious or safe with a 2-sentence
+                verdict.
+              </li>
+              <li>
+                Implemented an auto-blocking mechanism that issues Windows
+                Firewall rules to block attacker IPs when Gemini confirms a
+                threat.
+              </li>
+            </ul>
+            <div class="project-tech-stack">
+              <span class="tech-pill">Python</span>
+              <span class="tech-pill">Scapy</span>
+              <span class="tech-pill">Gemini AI</span>
+              <span class="tech-pill">Windows Firewall</span>
+              <span class="tech-pill">Networking</span>
+            </div>
+          </div>
+
+          <!-- Project 5: AI Shopping Platform -->
+          <div class="project-card" id="project-shopping">
+            <div class="project-card-header">
+              <span class="project-num-badge">05</span>
+              <a
+                href="https://github.com/Orisa123321"
+                target="_blank"
+                rel="noopener"
+                class="project-link"
+                aria-label="View project on GitHub"
+              >
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+            <span class="project-category">Full-Stack · AI · PWA</span>
+            <h3 class="project-name">AI-Powered Smart Shopping Platform</h3>
+            <ul class="project-description">
+              <li>
+                Progressive Web App (PWA) using React + TypeScript with Vite
+                &amp; Framer Motion.
+              </li>
+              <li>
+                Serverless backend via Firebase Auth &amp; Firestore for
+                real-time NoSQL sync.
+              </li>
+              <li>
+                Integrated Google Gemini API for nutritional analysis &amp;
+                automated list generation.
+              </li>
+              <li>
+                Drag-and-drop (@dnd-kit), QR/Barcode scanning, and WhatsApp
+                sharing workflows.
+              </li>
+            </ul>
+            <div class="project-tech-stack">
+              <span class="tech-pill">React</span>
+              <span class="tech-pill">TypeScript</span>
+              <span class="tech-pill">Gemini API</span>
+              <span class="tech-pill">Firebase</span>
+              <span class="tech-pill">Vite</span>
+              <span class="tech-pill">PWA</span>
+            </div>
+          </div>
+
+          <!-- Project 6: MadridFans Dashboard -->
+          <div class="project-card" id="project-madridfans">
+            <div class="project-card-header">
+              <span class="project-num-badge">06</span>
+              <a
+                href="https://github.com/Orisa123321"
+                target="_blank"
+                rel="noopener"
+                class="project-link"
+                aria-label="View project on GitHub"
+              >
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+            <span class="project-category"
+              >Full-Stack · Real-time · Community</span
+            >
+            <h3 class="project-name">MadridFans — Real Madrid Fan Platform</h3>
+            <ul class="project-description">
+              <li>
+                Full-stack community platform for Real Madrid fans featuring
+                news feeds, live chat, and a predictions arena.
+              </li>
+              <li>
+                Integrated Supabase (PostgreSQL) for real-time data sync and
+                Google OAuth for authentication.
+              </li>
+              <li>
+                Built a gamification system with user ranks, points tracking,
+                and Man-of-the-Match voting.
+              </li>
+              <li>
+                Bilingual support (Hebrew/English) with full RTL layout,
+                deployed on Vercel.
+              </li>
+            </ul>
+            <div class="project-tech-stack">
+              <span class="tech-pill">React</span>
+              <span class="tech-pill">Supabase</span>
+              <span class="tech-pill">Real-time</span>
+              <span class="tech-pill">Google OAuth</span>
+              <span class="tech-pill">Vite</span>
+            </div>
+          </div>
+
+          <!-- Project 7: C Assembler -->
+          <div class="project-card" id="project-assembler">
+            <div class="project-card-header">
+              <span class="project-num-badge">07</span>
+              <a
+                href="https://github.com/Orisa123321"
+                target="_blank"
+                rel="noopener"
+                class="project-link"
+                aria-label="View project on GitHub"
+              >
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+            <span class="project-category">Systems · C · Linux</span>
+            <h3 class="project-name">C Laboratory — Assembler Program</h3>
+            <ul class="project-description">
+              <li>
+                Comprehensive assembler built in C on a Linux environment.
+              </li>
+              <li>
+                Deep understanding of data structures, algorithms, and low-level
+                memory management.
+              </li>
+              <li>
+                Tested and debugged complex logic flows for accurate
+                assembly-to-machine-code compilation.
+              </li>
+            </ul>
+            <div class="project-tech-stack">
+              <span class="tech-pill">C</span>
+              <span class="tech-pill">Linux</span>
+              <span class="tech-pill">Assembly</span>
+              <span class="tech-pill">Memory Management</span>
+              <span class="tech-pill">Data Structures</span>
+            </div>
+          </div>
+
+          <!-- Project 8: CodeCollab -->
+          <div class="project-card" id="project-codecollab">
+            <div class="project-card-header">
+              <span class="project-num-badge">08</span>
+              <a
+                href="https://github.com/Orisa123321"
+                target="_blank"
+                rel="noopener"
+                class="project-link"
+                aria-label="View project on GitHub"
+              >
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+            <span class="project-category">Backend · Database · Docker</span>
+            <h3 class="project-name">CodeCollab — Real-time Code Editor</h3>
+            <ul class="project-description">
+              <li>
+                Collaborative code editing platform built as a full-stack
+                monorepo.
+              </li>
+              <li>
+                PostgreSQL + Prisma ORM for relational data management; Redis
+                for caching.
+              </li>
+              <li>
+                Containerized with Docker &amp; Docker Compose for reliable
+                environment parity.
+              </li>
+              <li>
+                JWT authentication with Bcrypt hashing and refresh token
+                rotation.
+              </li>
+            </ul>
+            <div class="project-tech-stack">
+              <span class="tech-pill">Node.js</span>
+              <span class="tech-pill">PostgreSQL</span>
+              <span class="tech-pill">Docker</span>
+              <span class="tech-pill">Redis</span>
+              <span class="tech-pill">TypeScript</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="projects-cta">
+          <a
+            href="https://github.com/Orisa123321"
+            target="_blank"
+            rel="noopener"
+            class="btn btn-outline"
+            id="btn-github-all"
+          >
+            <i class="fab fa-github"></i> See More on GitHub
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== EDUCATION ==================== -->
+    <section class="education-section" id="education">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-tag">Academic background</span>
+          <h2 class="section-title">
+            My <span class="gradient-text">Education</span>
+          </h2>
+          <p class="section-subtitle">
+            Building a strong foundation in Computer Science fundamentals.
+          </p>
+        </div>
+
+        <!-- Main Degree Card -->
+        <div class="edu-main-card" id="edu-main-card">
+          <div class="edu-icon-wrap">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <div class="edu-body">
+            <div class="edu-meta">
+              <span class="edu-year">Graduation: 08/2027</span>
+              <span class="edu-status">2nd Year Student</span>
+            </div>
+            <h3 class="edu-degree">B.Sc. in Computer Science</h3>
+            <p class="edu-institution">
+              <i class="fas fa-map-marker-alt"></i> The Open University, Israel
+            </p>
+            <div>
+              <h4
+                style="
+                  font-size: 0.82rem;
+                  color: var(--text-muted);
+                  margin-bottom: 12px;
+                  text-transform: uppercase;
+                  letter-spacing: 0.08em;
+                "
+              >
+                <i
+                  class="fas fa-book"
+                  style="color: var(--accent); margin-right: 6px"
+                ></i>
+                Relevant Coursework
+              </h4>
+              <div class="courses-grid">
+                <div class="course-chip">
+                  <i class="fas fa-brain"></i> Data Structures &amp; Algorithms
+                </div>
+                <div class="course-chip">
+                  <i class="fas fa-laptop-code"></i> Intro to Computer Science
+                </div>
+                <div class="course-chip">
+                  <i class="fas fa-network-wired"></i> Computer Networks
+                </div>
+                <div class="course-chip">
+                  <i class="fas fa-database"></i> Database System Concepts
+                </div>
+                <div class="course-chip">
+                  <i class="fab fa-python"></i> Python Programming
+                </div>
+                <div class="course-chip">
+                  <i class="fas fa-microchip"></i> Operating Systems
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT ==================== -->
+    <section class="contact-section" id="contact">
+      <div class="section-container">
+        <div class="contact-inner">
+          <div class="contact-text">
+            <span class="section-tag">Let's build something</span>
+            <h2
+              class="section-title"
+              style="text-align: left; margin-top: 12px"
+            >
+              Let's <span class="gradient-text">Connect</span>
+            </h2>
+            <p class="contact-summary">
+              I'm actively looking for junior software engineer roles where I
+              can take ownership, work in a fast-paced environment, and learn
+              quickly. Whether you have an opportunity or just want to chat — my
+              inbox is open!
+            </p>
+            <div class="contact-buttons" id="contact-buttons">
+              <a
+                href="mailto:ori.shar10@gmail.com"
+                class="contact-btn contact-btn-email"
+                id="btn-email"
+                aria-label="Send email"
+              >
+                <i class="fas fa-envelope"></i>
+                <span>ori.shar10@gmail.com</span>
+              </a>
+              <a
+                href="tel:0547419095"
+                class="contact-btn contact-btn-outline"
+                aria-label="Call me"
+              >
+                <i class="fas fa-phone"></i>
+                <span>054-7419095</span>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/OriSharabi/"
+                target="_blank"
+                rel="noopener"
+                class="contact-btn contact-btn-linkedin"
+                id="btn-linkedin"
+                aria-label="View LinkedIn"
+              >
+                <i class="fab fa-linkedin-in"></i>
+                <span>LinkedIn</span>
+              </a>
+            </div>
+          </div>
+          <div class="contact-visual" id="contact-visual">
+            <div class="contact-card-stack">
+              <div class="stack-card stack-card-3"></div>
+              <div class="stack-card stack-card-2"></div>
+              <div class="stack-card stack-card-1">
+                <div class="contact-card-content">
+                  <div class="contact-avatar">OS</div>
+                  <p class="contact-card-name">Ori Sharabi</p>
+                  <p class="contact-card-role">Software Engineer</p>
+                  <div class="contact-card-socials">
+                    <a
+                      href="https://www.linkedin.com/in/OriSharabi/"
+                      target="_blank"
+                      rel="noopener"
+                      aria-label="LinkedIn"
+                      ><i class="fab fa-linkedin-in"></i
+                    ></a>
+                    <a
+                      href="https://github.com/Orisa123321"
+                      target="_blank"
+                      rel="noopener"
+                      aria-label="GitHub"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                    <a href="mailto:ori.shar10@gmail.com" aria-label="Email"
+                      ><i class="fas fa-envelope"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer" id="footer">
+      <div class="footer-container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <span class="footer-logo">
+              <span class="logo-dot"></span>
+              Ori Sharabi
+            </span>
+            <p class="footer-tagline">
+              Building robust, scalable software — one commit at a time.
+            </p>
+          </div>
+          <div class="footer-nav-group">
+            <h5>Navigation</h5>
+            <ul>
+              <li><a href="#hero">Home</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#education">Education</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-socials-group">
+            <h5>Connect</h5>
+            <div class="footer-social-icons">
+              <a
+                href="https://github.com/Orisa123321"
+                target="_blank"
+                rel="noopener"
+                class="footer-social-icon"
+                aria-label="GitHub"
+                id="footer-github"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/OriSharabi/"
+                target="_blank"
+                rel="noopener"
+                class="footer-social-icon"
+                aria-label="LinkedIn"
+                id="footer-linkedin"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a
+                href="mailto:ori.shar10@gmail.com"
+                class="footer-social-icon"
+                aria-label="Email"
+                id="footer-email"
+                ><i class="fas fa-envelope"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p class="footer-copyright">
+            © 2026 Ori Sharabi. All rights reserved.
+          </p>
+          <div class="footer-bottom-links">
+            <a
+              href="#hero"
+              id="back-to-top"
+              class="back-top-btn"
+              aria-label="Back to top"
+            >
+              <i class="fas fa-chevron-up"></i> Back to top
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Floating Action Buttons -->
+    <div class="floating-actions" id="floating-actions">
+      <a
+        href="https://wa.me/972547419095"
+        target="_blank"
+        rel="noopener"
+        class="fab-btn fab-whatsapp"
+        id="fab-whatsapp"
+        aria-label="WhatsApp"
+        title="WhatsApp"
+      >
+        <i class="fab fa-whatsapp"></i>
+      </a>
+      <a
+        href="https://www.linkedin.com/in/OriSharabi/"
+        target="_blank"
+        rel="noopener"
+        class="fab-btn fab-linkedin"
+        id="fab-linkedin"
+        aria-label="LinkedIn"
+        title="LinkedIn"
+      >
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </div>
+
+    <!-- Back to Top -->
+    <button
+      class="scroll-top-btn"
+      id="scroll-top-btn"
+      aria-label="Scroll to top"
+    >
+      <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
