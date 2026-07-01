@@ -302,3 +302,37 @@ console.log(
   '%c🔗 GitHub: https://github.com/Orisa123321 | LinkedIn: https://www.linkedin.com/in/OriSharabi/',
   'color:#94a3b8; font-size:12px;'
 );
+// ==================== VISITOR COUNTER ====================
+(function initVisitorCounter() {
+  const counterEl = document.getElementById('visitor-count');
+  if (!counterEl) return;
+
+  // 1. LocalStorage fallback logic (starts from 0)
+  const LOCAL_STORAGE_KEY = 'portfolio_views';
+  let localViews = parseInt(localStorage.getItem(LOCAL_STORAGE_KEY)) || 0;
+  localViews += 1;
+  localStorage.setItem(LOCAL_STORAGE_KEY, localViews);
+
+  // Pre-fill immediately with local count
+  counterEl.textContent = Number(localViews).toLocaleString();
+
+  // 2. Fetch from a live Counter API
+  const apiURL = 'https://api.counterapi.dev/v1/orisharabi/portfolio/up';
+  
+  fetch(apiURL)
+    .then(response => {
+      if (!response.ok) throw new Error('API down');
+      return response.json();
+    })
+    .then(data => {
+      if (data && typeof data.count === 'number') {
+        // Use the absolute real count from the API
+        const displayCount = Math.max(data.count, localViews);
+        counterEl.textContent = displayCount.toLocaleString();
+      }
+    })
+    .catch(() => {
+      // Fall back to local count if offline
+      counterEl.textContent = localViews.toLocaleString();
+    });
+})();

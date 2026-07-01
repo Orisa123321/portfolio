@@ -1308,6 +1308,45 @@ button { cursor: pointer; font-family: inherit; border: none; background: none; 
   color: var(--text-muted);
 }
 
+.footer-visitor-counter {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.78rem;
+  font-family: var(--font-mono);
+  color: var(--text-secondary);
+  background: rgba(16, 185, 129, 0.05);
+  border: 1px solid rgba(16, 185, 129, 0.15);
+  padding: 4px 12px;
+  border-radius: var(--radius-sm);
+  transition: var(--transition-fast);
+}
+.footer-visitor-counter:hover {
+  border-color: rgba(16, 185, 129, 0.35);
+  background: rgba(16, 185, 129, 0.08);
+}
+.visitor-dot {
+  width: 6px;
+  height: 6px;
+  background: var(--accent);
+  border-radius: 50%;
+  box-shadow: 0 0 6px var(--accent);
+  display: inline-block;
+  animation: visitorPulse 2s infinite ease-in-out;
+}
+.visitor-label {
+  color: var(--text-muted);
+}
+#visitor-count {
+  color: var(--accent-light);
+  font-weight: 700;
+}
+
+@keyframes visitorPulse {
+  0%, 100% { opacity: 0.5; transform: scale(0.9); }
+  50% { opacity: 1; transform: scale(1.15); }
+}
+
 .back-top-btn {
   display: inline-flex;
   align-items: center;
